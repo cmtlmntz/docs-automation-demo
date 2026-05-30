@@ -1,0 +1,17 @@
+name: Documentation Quality Check
+
+on: [push, pull_request]
+
+jobs:
+  prose-lint:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Run Vale Linter
+        uses: errata-ai/vale-action@v2
+        with:
+          files: .
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
