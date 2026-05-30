@@ -13,5 +13,6 @@ jobs:
         uses: errata-ai/vale-action@v2
         with:
           files: .
+          reporter: github-check
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
