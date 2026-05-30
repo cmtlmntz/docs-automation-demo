@@ -1,2 +1,2 @@
 # Features List
-We should utilizing automation because it is very unique.
+We should utilizing automationz because it is very unique.
